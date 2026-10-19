@@ -15,6 +15,9 @@ NGF Immobilien.”
 
 ## Get started
 
+Choose [Python](python/README.md) or [TypeScript](typescript/README.md).
+The commands below use Python.
+
 1. [Create a Personal API Key](https://app.datablist.com/account/api).
 2. Run these commands from this folder:
 
@@ -122,7 +125,7 @@ curl "https://api.datablist.com/v1/enrichments/tasks/$TASK_ID/results" \
 ```
 
 If `nextCursor` is not `null`, pass it as `cursor` to fetch the next page.
-The Python examples read every page for you.
+The Python and TypeScript examples read every page for you.
 
 ## Python examples
 
@@ -135,8 +138,26 @@ Each script is self-contained: submit names, wait for the background task, then
 read the results. Both use the API's background tasks; the difference is how
 Python waits for the HTTP calls.
 
+## TypeScript example
+
+Use [the standalone TypeScript example](typescript/example.ts) with Node.js 24.3+;
+no packages to install. From the repository root:
+
+```sh
+export DATABLIST_API_KEY='your-personal-api-key'
+node typescript/example.ts
+```
+
+See the [TypeScript guide](typescript/README.md) for editable inputs and settings.
+
 ## Documentation
 
 - [Company Name Cleaner API](https://platform.datablist.com/docs/enrichments/tools/company-name-cleaner)
 - [Enrichments API quickstart](https://platform.datablist.com/docs/enrichments/quickstart)
 - [Task lifecycle](https://platform.datablist.com/docs/enrichments/tasks)
+
+## Other Datablist API examples
+
+- [Company Name to Domain API](https://github.com/datablist/company-name-to-domain-api): find company websites from names.
+- [LinkedIn Profile Finder API](https://github.com/datablist/linkedin-profile-finder-api): find profiles from names and company keywords.
+- [Impressum Scraper API](https://github.com/datablist/impressum-scraper-api): extract business details from website Impressum pages.
