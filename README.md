@@ -13,6 +13,14 @@ company lists. For outreach, keep the original company name in your records and
 use the cleaned name in sentences such as “I wanted to reach out to your team at
 NGF Immobilien.”
 
+## Cost
+
+**0.5 credits per company name cleaned.**
+
+Costs are in Datablist credits. Each result reports its actual `creditsUsed`.
+See the [API cost and limits](https://platform.datablist.com/docs/enrichments/tools/company-name-cleaner#credits-and-limits)
+and [credit pack pricing](https://www.datablist.com/pricing) for current rates.
+
 ## Get started
 
 Choose [Python](python/README.md) or [TypeScript](typescript/README.md).
@@ -30,11 +38,6 @@ python sync_requests.py
 
 Edit the `companies` list at the bottom of the script to try your own names.
 See the [Python guide](python/README.md) for setup and the async example.
-
-Calls use account credits. Check the current
-[credit cost and limits](https://platform.datablist.com/docs/enrichments/tools/company-name-cleaner#credits-and-limits)
-and [pricing](https://www.datablist.com/pricing) before running the examples.
-Each result includes its actual `creditsUsed`.
 
 ## Input and output
 
