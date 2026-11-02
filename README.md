@@ -1,7 +1,8 @@
 # Company Name Cleaner API
 
 Clean and standardize company names with the
-[Datablist](https://www.datablist.com/) Company Name Cleaner API.
+Datablist
+[Company Name Cleaner API](https://www.datablist.com/apis/company-name-cleaner).
 
 Turn names such as `TRansformFactory Limited` into `Transform Factory` and
 `NGF Immobilien GmbH & Co. KG` into `NGF Immobilien`. Fix casing and spacing,
@@ -15,7 +16,10 @@ NGF Immobilien.”
 
 ## Cost
 
-**0.5 credits per company name cleaned.**
+The base cost is **$1 for 1,000 credits** ($0.001 per credit, in USD).
+Larger top-up packages reduce the price per credit and per record.
+
+**0.5 credits ($0.0005) per company name cleaned.**
 
 Costs are in Datablist credits. Each result reports its actual `creditsUsed`.
 See the [API cost and limits](https://platform.datablist.com/docs/enrichments/tools/company-name-cleaner#credits-and-limits)
@@ -176,3 +180,4 @@ See the [TypeScript guide](typescript/README.md) for editable inputs and setting
 - [Waterfall Email Finder API](https://github.com/datablist/waterfall-email-finder-api): find work emails from names and companies or LinkedIn URLs.
 - [Waterfall Phone Finder API](https://github.com/datablist/waterfall-phone-finder-api): find phone numbers from LinkedIn profile URLs.
 - [Waterfall Personal Email Finder API](https://github.com/datablist/waterfall-personal-email-finder-api): find personal email addresses from LinkedIn profile URLs.
+- [Instagram Followers Scraper API](https://github.com/datablist/instagram-followers-scraper-api): scrape followers or following lists from Instagram profiles.
